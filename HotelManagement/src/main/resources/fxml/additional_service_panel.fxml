@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:controller="controller.AdditionalServiceController"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center" hgap="10" vgap="10" stylesheets="@/css/modern.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Text text="Additional Service Panel" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" styleClass="header-large"/>
+    <Label text="Service Type:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="serviceTypeField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label text="Season:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="seasonField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Label text="Usage Count:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="usageCountField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Button text="Create Additional Service" onAction="#handleCreateAdditionalService" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Button text="Back" onAction="#handleGoBack" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+</GridPane>

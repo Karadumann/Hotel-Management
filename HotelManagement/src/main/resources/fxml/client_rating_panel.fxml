@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:controller="controller.ClientRatingController"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center" hgap="10" vgap="10" stylesheets="@/css/modern.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <VBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.rowSpan="2">
+        <Text text="Client Rating Panel" styleClass="header-large"/>
+        <Label text="Client ID:"/>
+        <TextField fx:id="clientIdField"/>
+        <Label text="Rating:"/>
+        <TextField fx:id="ratingField"/>
+        <HBox spacing="10">
+            <Button text="Back" onAction="#handleGoBack"/>
+            <Button text="Create Client Rating" onAction="#handleCreateClientRating"/>
+        </HBox>
+    </VBox>
+    <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.rowSpan="2">
+        <Text text="Clients" styleClass="header-large"/>
+        <TableView fx:id="clientTableView">
+            <columns>
+                <TableColumn fx:id="clientIdColumn" text="ID"/>
+                <TableColumn fx:id="clientNameColumn" text="Name"/>
+                <TableColumn fx:id="clientEmailColumn" text="Email"/>
+            </columns>
+        </TableView>
+    </VBox>
+</GridPane>

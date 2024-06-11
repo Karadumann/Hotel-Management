@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:controller="controller.ManagerController"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center" hgap="10" vgap="10" stylesheets="@/css/modern.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Text text="Manager Panel" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" styleClass="header-large"/>
+    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Button text="Create Receptionist" onAction="#handleCreateReceptionist" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <VBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="2">
+        <Text text="Reservations" styleClass="header-middle"/>
+        <TableView fx:id="reservationTableView" prefHeight="200">
+            <columns>
+                <TableColumn fx:id="reservationClientIdColumn" text="Client ID"/>
+                <TableColumn fx:id="reservationNumberColumn" text="Reservation Number"/>
+                <TableColumn fx:id="roomNumberColumn" text="Room Number"/>
+                <TableColumn fx:id="cancellationTypeColumn" text="Cancellation Type"/>
+                <TableColumn fx:id="roomCategoryColumn" text="Room Category"/>
+                <TableColumn fx:id="startDateColumn" text="Start Date"/>
+                <TableColumn fx:id="endDateColumn" text="End Date"/>
+                <TableColumn fx:id="isCancelledColumn" text="Is Cancelled"/>
+            </columns>
+        </TableView>
+    </VBox>
+
+    <VBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2">
+        <Text text="Receptionists" styleClass="header-middle"/>
+        <TableView fx:id="receptionistTableView" prefHeight="200">
+            <columns>
+                <TableColumn fx:id="receptionistUsernameColumn" text="Username"/>
+                <TableColumn fx:id="receptionistPasswordColumn" text="Password"/>
+            </columns>
+        </TableView>
+    </VBox>
+
+    <VBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="2">
+        <Text text="Notifications" styleClass="header-middle"/>
+        <TableView fx:id="notificationTableView" prefHeight="200">
+            <columns>
+                <TableColumn fx:id="notificationMessageColumn" text="Message"/>
+                <TableColumn fx:id="notificationCreatedAtColumn" text="Created At"/>
+            </columns>
+        </TableView>
+    </VBox>
+    <Button text="Back" onAction="#handleGoBack" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+
+</GridPane>

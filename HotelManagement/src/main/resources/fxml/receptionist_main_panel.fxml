@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:controller="controller.ReceptionistMainController"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center" hgap="10" vgap="10" stylesheets="@/css/modern.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Text text="Receptionist Main Panel" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3" styleClass="header-large"/>
+    <Button text="Receptionist Panel" onAction="#handleOpenReceptionistPanel" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Button text="Additional Service Panel" onAction="#handleOpenAdditionalServicePanel" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Button text="Client Rating Panel" onAction="#handleOpenClientRatingPanel" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+</GridPane>

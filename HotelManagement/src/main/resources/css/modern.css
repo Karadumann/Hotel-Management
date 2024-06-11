@@ -1,0 +1,48 @@
+.root {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-background-color: #f0f0f0;
+}
+
+.header {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555;
+}
+
+.text-field {
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+.header-large {
+    -fx-font-size: 24px; /* İstediğiniz font boyutunu buraya yazabilirsiniz */
+    -fx-font-weight: bold;
+}.header-middle {
+    -fx-font-size: 16px; /* İstediğiniz font boyutunu buraya yazabilirsiniz */
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.button:pressed {
+    -fx-background-color: #004494;
+}
