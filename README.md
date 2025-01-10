@@ -21,7 +21,7 @@ A comprehensive hotel management system built with Java and JavaFX that enables 
 - Process additional services
 - Manage client ratings and feedback
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - **Java** - Core programming language
 - **JavaFX** - GUI framework
@@ -30,13 +30,13 @@ A comprehensive hotel management system built with Java and JavaFX that enables 
 - **JUnit & TestNG** - Testing frameworks
 - **Scene Builder** - UI design tool
 
-## 📋 System Requirements
+## System Requirements
 
 - Java 11 or higher
 - MySQL Database
 - Maven
 
-## 🚀 Installation
+## Installation
 
 1. Clone the repository
 ```bash
